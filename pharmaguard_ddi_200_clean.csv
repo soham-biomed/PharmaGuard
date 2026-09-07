@@ -1,0 +1,201 @@
+drug1,drug2,severity,effect
+Warfarin,Ibuprofen,Major,Increased bleeding risk via COX-1 inhibition
+Warfarin,Aspirin,Major,Synergistic anticoagulation raises haemorrhage risk
+Warfarin,Metronidazole,Major,CYP2C9 inhibition markedly elevates warfarin INR
+Warfarin,Fluconazole,Major,CYP2C9 inhibition causes dangerous INR elevation
+Warfarin,Ciprofloxacin,Moderate,Gut flora disruption potentiates warfarin effect
+Warfarin,Azithromycin,Moderate,P-glycoprotein inhibition increases warfarin exposure
+Warfarin,Clarithromycin,Major,CYP3A4 and CYP2C9 inhibition raises warfarin INR
+Warfarin,Rifampicin,Major,CYP2C9 induction drastically reduces warfarin efficacy
+Warfarin,Naproxen,Major,Additive GI bleeding and anticoagulation risk
+Warfarin,Diclofenac,Major,COX inhibition raises haemorrhagic risk significantly
+Warfarin,Cotrimoxazole,Major,CYP2C9 inhibition dramatically elevates warfarin INR
+Warfarin,Erythromycin,Moderate,CYP3A4 inhibition increases warfarin plasma exposure
+Warfarin,Clopidogrel,Major,Dual antihaemostatic effect raises severe bleeding risk
+Warfarin,Ticagrelor,Major,"Additive bleeding risk, increased haemorrhage potential"
+Warfarin,Doxycycline,Moderate,Reduced vitamin K synthesis elevates warfarin INR
+Warfarin,Itraconazole,Major,CYP3A4 and CYP2C9 inhibition potentiates warfarin
+Warfarin,Ketoconazole,Major,Strong CYP2C9 inhibition raises warfarin toxicity risk
+Warfarin,Simvastatin,Moderate,"Statin potentiates warfarin, elevated bleeding risk"
+Warfarin,Omeprazole,Moderate,CYP2C19 inhibition mildly potentiates warfarin effect
+Warfarin,Levofloxacin,Moderate,Fluoroquinolone disrupts gut vitamin K metabolism
+Warfarin,Amiodarone,Major,CYP2C9 inhibition causes dangerous warfarin INR elevation
+Simvastatin,Clarithromycin,Major,"CYP3A4 inhibition raises simvastatin, myopathy risk"
+Simvastatin,Itraconazole,Major,CYP3A4 inhibition causes severe rhabdomyolysis risk
+Simvastatin,Ketoconazole,Major,Strong CYP3A4 inhibition markedly raises myopathy risk
+Simvastatin,Fluconazole,Moderate,CYP3A4 inhibition raises simvastatin muscle toxicity
+Simvastatin,Amlodipine,Moderate,Amlodipine CYP3A4 inhibition raises simvastatin exposure
+Simvastatin,Erythromycin,Major,CYP3A4 inhibition significantly raises myopathy risk
+Simvastatin,Rifampicin,Moderate,CYP3A4 induction reduces simvastatin plasma levels
+Atorvastatin,Clarithromycin,Major,"CYP3A4 inhibition raises atorvastatin, myopathy risk"
+Atorvastatin,Itraconazole,Major,CYP3A4 inhibition causes serious myopathy risk
+Atorvastatin,Rifampicin,Moderate,CYP induction significantly reduces atorvastatin efficacy
+Atorvastatin,Ketoconazole,Major,CYP3A4 inhibition dramatically raises atorvastatin levels
+Atorvastatin,Fluconazole,Moderate,CYP3A4 inhibition increases atorvastatin exposure
+Atorvastatin,Erythromycin,Moderate,CYP3A4 inhibition raises atorvastatin levels moderately
+Rosuvastatin,Ketoconazole,Moderate,OATP transporter inhibition raises rosuvastatin exposure
+Rosuvastatin,Rifampicin,Moderate,Transporter induction reduces rosuvastatin plasma levels
+Rosuvastatin,Fluconazole,Moderate,CYP2C9 inhibition mildly raises rosuvastatin levels
+Rosuvastatin,Itraconazole,Moderate,OATP inhibition raises rosuvastatin plasma concentration
+Pravastatin,Clarithromycin,Minor,"Minimal CYP interaction, slight pravastatin level increase"
+Atorvastatin,Amlodipine,Minor,Mild CYP3A4 inhibition raises atorvastatin marginally
+Simvastatin,Ciprofloxacin,Minor,"Minor CYP3A4 inhibition, slight simvastatin elevation"
+Clopidogrel,Omeprazole,Moderate,CYP2C19 inhibition reduces clopidogrel active metabolite
+Clopidogrel,Esomeprazole,Moderate,CYP2C19 inhibition reduces clopidogrel antiplatelet effect
+Clopidogrel,Pantoprazole,Minor,"Minimal CYP2C19 inhibition, least impact among PPIs"
+Clopidogrel,Fluconazole,Major,Strong CYP2C19 inhibition blocks clopidogrel activation
+Clopidogrel,Ciprofloxacin,Moderate,CYP2C19 inhibition decreases clopidogrel activation
+Clopidogrel,Aspirin,Moderate,Additive antiplatelet effect raises GI bleeding risk
+Clopidogrel,Rifampicin,Moderate,CYP2C19 induction unpredictably alters clopidogrel effect
+Ticagrelor,Clarithromycin,Major,"CYP3A4 inhibition raises ticagrelor, haemorrhage risk"
+Ticagrelor,Ketoconazole,Major,CYP3A4 inhibition dramatically increases ticagrelor levels
+Ticagrelor,Rifampicin,Major,CYP3A4 induction significantly reduces ticagrelor efficacy
+Ticagrelor,Itraconazole,Major,"CYP3A4 inhibition raises ticagrelor, bleeding risk"
+Ticagrelor,Simvastatin,Moderate,CYP3A4 inhibition by ticagrelor raises simvastatin levels
+Aspirin,Ibuprofen,Moderate,Ibuprofen blocks aspirin cardioprotective antiplatelet effect
+Aspirin,Naproxen,Moderate,Competitive COX-1 inhibition reduces aspirin platelet effect
+Aspirin,Diclofenac,Moderate,NSAID competition reduces aspirin antiplatelet COX binding
+Metformin,Ciprofloxacin,Moderate,OCT2 inhibition reduces metformin renal clearance
+Metformin,Furosemide,Moderate,Diuretic renal impairment raises metformin lactic acidosis risk
+Metformin,Hydrochlorothiazide,Minor,Thiazide-induced hyperglycaemia counters metformin effect
+Metformin,Ibuprofen,Moderate,NSAID-induced renal impairment raises metformin accumulation
+Glibenclamide,Fluconazole,Major,CYP2C9 inhibition causes prolonged severe hypoglycaemia
+Glibenclamide,Cotrimoxazole,Major,CYP2C9 inhibition causes severe prolonged hypoglycaemia
+Glibenclamide,Ciprofloxacin,Major,"CYP2C9 inhibition raises sulfonylurea, severe hypoglycaemia"
+Glibenclamide,Metoprolol,Moderate,Beta-blocker masks tachycardia sign of hypoglycaemia
+Glibenclamide,Atenolol,Moderate,Beta-blockade masks and prolongs hypoglycaemic episodes
+Glimepiride,Fluconazole,Major,CYP2C9 inhibition markedly raises glimepiride exposure
+Glimepiride,Rifampicin,Moderate,CYP2C9 induction reduces glimepiride plasma concentration
+Glimepiride,Cotrimoxazole,Major,CYP2C9 inhibition causes severe glimepiride hypoglycaemia
+Sitagliptin,Ketoconazole,Minor,P-gp inhibition mildly raises sitagliptin plasma levels
+Pioglitazone,Rifampicin,Moderate,CYP2C8 induction reduces pioglitazone therapeutic efficacy
+Pioglitazone,Ketoconazole,Moderate,CYP2C8 inhibition raises pioglitazone plasma exposure
+Insulin,Metoprolol,Moderate,Beta-blocker masks tachycardia symptom of hypoglycaemia
+Insulin,Atenolol,Moderate,Beta-blockade delays recovery from hypoglycaemia
+Insulin,Ciprofloxacin,Moderate,Fluoroquinolone unpredictably alters blood glucose levels
+Empagliflozin,Furosemide,Moderate,Additive diuresis raises dehydration and hypotension risk
+Empagliflozin,Hydrochlorothiazide,Moderate,"Additive diuretic effect, dehydration and hypotension"
+Dapagliflozin,Furosemide,Moderate,Combined diuresis raises volume depletion risk
+Dapagliflozin,Hydrochlorothiazide,Moderate,Additive diuresis increases hypotension risk
+Gliclazide,Fluconazole,Major,CYP2C9 inhibition significantly raises gliclazide levels
+Gliclazide,Rifampicin,Moderate,CYP2C9 induction reduces gliclazide plasma exposure
+Ramipril,Spironolactone,Major,Dual RAAS blockade causes severe hyperkalaemia
+Ramipril,Losartan,Major,RAAS dual blockade causes hyperkalaemia and renal injury
+Ramipril,Ibuprofen,Moderate,NSAID blunts ACE inhibitor antihypertensive effect
+Ramipril,Diclofenac,Moderate,"NSAID reduces ACE inhibitor efficacy, raises renal risk"
+Enalapril,Spironolactone,Major,Combined potassium retention causes severe hyperkalaemia
+Enalapril,Ibuprofen,Moderate,NSAID reduces ACE inhibitor antihypertensive effect
+Lisinopril,Spironolactone,Major,"Additive potassium retention, severe hyperkalaemia risk"
+Lisinopril,Diclofenac,Moderate,"NSAID reduces antihypertensive effect, raises renal risk"
+Losartan,Spironolactone,Major,"Additive hyperkalaemia, arrhythmia risk"
+Telmisartan,Ibuprofen,Moderate,NSAID reduces ARB antihypertensive efficacy
+Telmisartan,Spironolactone,Moderate,Additive potassium retention risk
+Valsartan,Spironolactone,Major,"Additive potassium retention, severe hyperkalaemia"
+Amlodipine,Rifampicin,Moderate,CYP3A4 induction significantly reduces amlodipine levels
+Amlodipine,Clarithromycin,Moderate,"CYP3A4 inhibition raises amlodipine, hypotension risk"
+Metoprolol,Verapamil,Major,Additive AV nodal block and cardiac depression risk
+Atenolol,Verapamil,Major,Combined negative chronotropy causes severe bradycardia
+Bisoprolol,Verapamil,Major,Additive bradycardia and AV conduction block
+Metoprolol,Fluoxetine,Moderate,CYP2D6 inhibition raises metoprolol plasma levels
+Hydrochlorothiazide,Lithium,Major,"Thiazide reduces lithium renal excretion, toxicity risk"
+Furosemide,Amikacin,Major,Additive ototoxicity and nephrotoxicity risk
+Furosemide,Digoxin,Moderate,Hypokalaemia from furosemide potentiates digoxin toxicity
+Hydrochlorothiazide,Digoxin,Moderate,Thiazide hypokalaemia potentiates digoxin cardiac toxicity
+Apixaban,Ibuprofen,Major,NSAID raises bleeding risk with direct factor Xa inhibitor
+Apixaban,Aspirin,Moderate,Additive antihaemostatic effect raises bleeding risk
+Apixaban,Clarithromycin,Moderate,P-gp inhibition raises apixaban plasma levels
+Apixaban,Ketoconazole,Major,P-gp and CYP3A4 dual inhibition doubles apixaban exposure
+Apixaban,Rifampicin,Major,P-gp and CYP3A4 induction halves apixaban efficacy
+Apixaban,Itraconazole,Major,P-gp and CYP3A4 inhibition raises apixaban bleeding risk
+Rivaroxaban,Ketoconazole,Major,P-gp and CYP3A4 inhibition doubles rivaroxaban exposure
+Rivaroxaban,Rifampicin,Major,P-gp and CYP3A4 induction reduces rivaroxaban efficacy
+Rivaroxaban,Ibuprofen,Major,NSAID raises bleeding risk with oral factor Xa inhibitor
+Rivaroxaban,Clarithromycin,Moderate,P-gp inhibition raises rivaroxaban plasma exposure
+Rivaroxaban,Aspirin,Moderate,Additive antihaemostatic effect raises bleeding risk
+Rivaroxaban,Diclofenac,Moderate,NSAID potentiates rivaroxaban haemorrhagic risk
+Dabigatran,Itraconazole,Major,P-gp inhibition markedly raises dabigatran plasma levels
+Dabigatran,Ketoconazole,Major,"P-gp inhibition raises dabigatran, major bleeding risk"
+Dabigatran,Rifampicin,Major,P-gp induction substantially reduces dabigatran efficacy
+Dabigatran,Clarithromycin,Moderate,P-gp inhibition raises dabigatran plasma levels
+Dabigatran,Aspirin,Moderate,Additive antihaemostatic effect raises bleeding risk
+Dabigatran,Ibuprofen,Moderate,NSAID raises dabigatran-mediated bleeding risk
+Heparin,Aspirin,Moderate,Additive antihaemostatic effect increases bleeding risk
+Heparin,Ibuprofen,Moderate,NSAID additive antihaemostatic raises haemorrhage risk
+Heparin,Diclofenac,Moderate,NSAID raises heparin-mediated haemorrhage risk
+Heparin,Naproxen,Moderate,Additive antihaemostatic raises GI haemorrhage risk
+Ciprofloxacin,Theophylline,Major,CYP1A2 inhibition markedly raises theophylline toxicity
+Ciprofloxacin,Tizanidine,Major,CYP1A2 inhibition causes severe hypotension and sedation
+Ciprofloxacin,Amiodarone,Major,"Additive QT prolongation, torsades de pointes risk"
+Levofloxacin,Amiodarone,Major,"Additive QT prolongation, fatal arrhythmia risk"
+Levofloxacin,Sotalol,Major,"Additive QT prolongation, torsades de pointes risk"
+Levofloxacin,Theophylline,Moderate,Mild CYP1A2 inhibition raises theophylline plasma levels
+Norfloxacin,Theophylline,Major,Strong CYP1A2 inhibition raises theophylline toxicity risk
+Ofloxacin,Amiodarone,Moderate,Additive QT prolongation risk with amiodarone
+Azithromycin,Amiodarone,Major,"Additive QT prolongation, torsades de pointes risk"
+Azithromycin,Sotalol,Major,"Additive QT prolongation, arrhythmia risk"
+Azithromycin,Digoxin,Moderate,P-gp inhibition raises digoxin plasma concentration
+Clarithromycin,Digoxin,Major,"P-gp inhibition raises digoxin levels, toxicity risk"
+Clarithromycin,Amiodarone,Major,CYP3A4 inhibition and additive QT prolongation risk
+Erythromycin,Digoxin,Moderate,P-gp inhibition moderately raises digoxin plasma levels
+Erythromycin,Amiodarone,Major,"Additive QT prolongation, serious arrhythmia risk"
+Metronidazole,Lithium,Moderate,Reduced lithium renal clearance raises toxicity risk
+Rifampicin,Metoprolol,Moderate,CYP3A4 induction reduces metoprolol plasma efficacy
+Rifampicin,Losartan,Moderate,CYP2C9 induction reduces losartan antihypertensive effect
+Rifampicin,Itraconazole,Major,CYP3A4 induction substantially reduces itraconazole efficacy
+Cotrimoxazole,Methotrexate,Major,"Folate antagonism additive, bone marrow toxicity risk"
+Cotrimoxazole,Phenytoin,Moderate,CYP2C9 inhibition raises phenytoin toxicity risk
+Omeprazole,Methotrexate,Major,OAT3 inhibition raises methotrexate toxicity risk
+Pantoprazole,Methotrexate,Moderate,OAT3 inhibition raises methotrexate plasma levels
+Esomeprazole,Methotrexate,Major,OAT3 inhibition markedly raises methotrexate toxicity
+Lansoprazole,Methotrexate,Moderate,OAT3 inhibition delays methotrexate renal clearance
+Omeprazole,Digoxin,Minor,Raised gastric pH mildly raises digoxin bioavailability
+Omeprazole,Ketoconazole,Moderate,Raised gastric pH substantially reduces ketoconazole absorption
+Lansoprazole,Clopidogrel,Minor,"Weak CYP2C19 inhibition, minimal antiplatelet impact"
+Ibuprofen,Lithium,Moderate,"NSAID reduces lithium renal excretion, toxicity risk"
+Naproxen,Lithium,Moderate,"NSAID reduces lithium clearance, plasma levels rise"
+Diclofenac,Lithium,Moderate,COX inhibition reduces lithium renal excretion
+Indomethacin,Lithium,Major,"Strong inhibition of lithium renal clearance, toxicity"
+Ibuprofen,Methotrexate,Major,"NSAID reduces methotrexate renal clearance, toxicity risk"
+Naproxen,Methotrexate,Major,"NSAID reduces methotrexate excretion, severe toxicity"
+Celecoxib,Warfarin,Moderate,CYP2C9 inhibition mildly raises warfarin anticoagulant effect
+Nimesulide,Warfarin,Moderate,NSAID additive anticoagulation raises bleeding risk
+Aceclofenac,Warfarin,Moderate,COX inhibition raises warfarin-mediated bleeding risk
+Nimesulide,Methotrexate,Major,"NSAID reduces methotrexate clearance, toxicity risk"
+Meloxicam,Warfarin,Moderate,COX-2 selective NSAID mildly potentiates warfarin effect
+Furosemide,Ibuprofen,Moderate,NSAID reduces loop diuretic antihypertensive efficacy
+Furosemide,Diclofenac,Moderate,NSAID reduces furosemide diuretic and antihypertensive effect
+Fluconazole,Amlodipine,Minor,CYP3A4 inhibition mildly raises amlodipine plasma levels
+Fluconazole,Losartan,Moderate,CYP2C9 inhibition reduces losartan conversion to active form
+Itraconazole,Digoxin,Moderate,P-gp inhibition significantly raises digoxin plasma levels
+Voriconazole,Warfarin,Major,Strong CYP2C9 inhibition markedly elevates warfarin INR
+Voriconazole,Rifampicin,Major,CYP induction drastically reduces voriconazole efficacy
+Voriconazole,Omeprazole,Moderate,Bidirectional CYP2C19 inhibition raises both drug levels
+Ketoconazole,Rifampicin,Major,CYP3A4 induction drastically reduces ketoconazole efficacy
+Amlodipine,Ketoconazole,Moderate,"CYP3A4 inhibition raises amlodipine, hypotension risk"
+Amlodipine,Itraconazole,Moderate,CYP3A4 inhibition raises amlodipine plasma levels
+Metoprolol,Amiodarone,Moderate,Additive bradycardia and AV conduction slowing
+Atenolol,Amiodarone,Moderate,Additive bradycardia and AV block risk
+Bisoprolol,Amiodarone,Moderate,Additive bradycardia and heart block risk
+Hydrochlorothiazide,Ibuprofen,Minor,NSAID reduces thiazide diuretic antihypertensive efficacy
+Pantoprazole,Itraconazole,Moderate,Raised gastric pH reduces itraconazole bioavailability
+Esomeprazole,Itraconazole,Moderate,Raised gastric pH reduces itraconazole capsule absorption
+Rabeprazole,Ketoconazole,Moderate,Raised gastric pH substantially reduces ketoconazole absorption
+Valsartan,Ramipril,Major,"Dual RAAS blockade, severe hyperkalaemia and renal failure"
+Olmesartan,Ramipril,Major,RAAS dual blockade causes hyperkalaemia and renal failure
+Rifampicin,Glibenclamide,Moderate,CYP2C9 induction reduces glibenclamide plasma levels
+Glimepiride,Ibuprofen,Minor,NSAID mildly potentiates sulfonylurea hypoglycaemic effect
+Methotrexate,Ciprofloxacin,Moderate,Fluoroquinolone reduces methotrexate renal clearance
+Digoxin,Amiodarone,Major,"Amiodarone inhibits P-gp, raises digoxin toxicity risk"
+Apixaban,Naproxen,Moderate,NSAID raises bleeding risk with factor Xa inhibitor
+Losartan,Lisinopril,Major,Dual RAAS blockade causes hyperkalaemia and renal failure
+Doxycycline,Rifampicin,Moderate,Rifampicin induction significantly reduces doxycycline levels
+Fluconazole,Metoprolol,Minor,CYP2D6 inhibition mildly raises metoprolol levels
+Itraconazole,Metoprolol,Minor,P-gp and mild CYP inhibition raises metoprolol levels
+Spironolactone,Furosemide,Moderate,Combined diuresis can cause electrolyte imbalance
+Furosemide,Ramipril,Moderate,"Loop diuretic potentiates ACE inhibitor, hypotension risk"
+Naproxen,Ramipril,Moderate,NSAID reduces ACE inhibitor antihypertensive efficacy
+Ibuprofen,Losartan,Moderate,NSAID reduces ARB antihypertensive effect
+Meloxicam,Ramipril,Moderate,NSAID reduces ACE inhibitor blood pressure lowering
+Gliclazide,Ibuprofen,Minor,NSAID mildly potentiates gliclazide hypoglycaemic effect
+Empagliflozin,Spironolactone,Minor,"Additive urinary effects, monitor electrolytes"
+Dapagliflozin,Ramipril,Minor,Additive hypotension risk with SGLT2 and ACE inhibitor
