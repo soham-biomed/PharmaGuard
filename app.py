@@ -1,20 +1,9 @@
-import os
-import platform
 import re
+import numpy as np
 import streamlit as st
 import pandas as pd
-import pytesseract
+import easyocr
 from PIL import Image, ImageOps, ImageEnhance
-
-# On Windows, pytesseract needs to know where the Tesseract program is
-# installed, since it is usually not on the system PATH there. On
-# Streamlit Cloud (Linux), tesseract-ocr is installed via packages.txt
-# and is already on the PATH, so we leave pytesseract's default behaviour
-# alone in that case.
-if platform.system() == "Windows":
-    windows_tesseract_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    if os.path.exists(windows_tesseract_path):
-        pytesseract.pytesseract.tesseract_cmd = windows_tesseract_path
 
 st.set_page_config(
     page_title="PharmaGuard",
@@ -57,6 +46,13 @@ display_drugs = [drug.title() for drug in drug_list]
 # ---------------------------------------------------------------------------
 # Helper functions for the Scan Medicine feature
 # ---------------------------------------------------------------------------
+
+@st.cache_resource
+def load_ocr_reader():
+    # Loading the OCR model takes a while, so we cache it and only do this
+    # once per app session instead of on every scan.
+    return easyocr.Reader(["en"], gpu=False)
+
 
 def preprocess_image(image):
     # Converting to grayscale and boosting contrast generally helps OCR read
@@ -309,17 +305,16 @@ with tab2:
         if st.button("Scan Image"):
 
             try:
-                with st.spinner("Reading text from image..."):
+                with st.spinner("Reading text from image... (first scan loads the OCR model and is slower)"):
                     processed_image = preprocess_image(image)
-                    # psm 6 tells Tesseract to expect one dense block of text
-                    # rather than trying to lay out a whole page. This matters
-                    # a lot when the photo has background around the label,
-                    # since Tesseract's default page-layout guessing otherwise
-                    # gets confused and returns nothing.
-                    raw_text = pytesseract.image_to_string(
-                        processed_image,
-                        config="--psm 6"
+                    reader = load_ocr_reader()
+                    # detail=0 returns just the recognized text lines, in the
+                    # same shape our regex parsing functions already expect
+                    text_lines = reader.readtext(
+                        np.array(processed_image),
+                        detail=0
                     )
+                    raw_text = "\n".join(text_lines)
 
                 # store results in session state so editing the fields below
                 # does not trigger OCR again on every rerun
@@ -330,10 +325,7 @@ with tab2:
                 st.session_state.detected_expiry = find_expiry_date(raw_text)
 
             except Exception as error:
-                st.error(
-                    "OCR failed. Make sure Tesseract OCR is installed on this "
-                    f"system. Error: {error}"
-                )
+                st.error(f"OCR failed. Error: {error}")
 
     if "raw_text" in st.session_state:
 
