@@ -1,12 +1,20 @@
+import os
+import platform
 import re
 import streamlit as st
 import pandas as pd
 import pytesseract
 from PIL import Image, ImageOps, ImageEnhance
 
-# On Windows, pytesseract needs to know where the Tesseract program is installed.
-# Tesseract is not on this machine's PATH, so we point directly at the exe.
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+# On Windows, pytesseract needs to know where the Tesseract program is
+# installed, since it is usually not on the system PATH there. On
+# Streamlit Cloud (Linux), tesseract-ocr is installed via packages.txt
+# and is already on the PATH, so we leave pytesseract's default behaviour
+# alone in that case.
+if platform.system() == "Windows":
+    windows_tesseract_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    if os.path.exists(windows_tesseract_path):
+        pytesseract.pytesseract.tesseract_cmd = windows_tesseract_path
 
 st.set_page_config(
     page_title="PharmaGuard",
